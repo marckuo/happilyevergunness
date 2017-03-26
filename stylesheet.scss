@@ -1,0 +1,164 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300 !important;
+  text-align: center;
+  font-size: 40px !important;
+}
+
+.navigation {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 1px solid #d3d3d3;
+  margin: auto;
+}
+
+.nav--links {
+  display: flex;
+  width: 1200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav--link-left {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.nav--link-right {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav--logo {
+  display: inline-block;
+  width: 200px;
+  position: absolute;
+}
+
+.nav--logo-top {
+  color: #C6AB4F;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  width: 200px;
+  text-align: center;
+  display: block;
+}
+
+.nav--logo-bottom {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  top: -5px;
+  right: -13px;
+}
+
+a.nav--link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #54595F;
+  transition-duration: 0.3s;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+a:hover.nav--link  {
+  text-decoration: none;
+  color: #C6AB4F;
+  transition-duration: 0.3s;
+}
+
+a.nav--link span.glyphicon.glyphicon-heart {
+  position: absolute;
+  left: -16px;
+  top: 2px;
+  visibility: hidden;
+}
+
+a:hover.nav--link span.glyphicon.glyphicon-heart {
+  visibility: visible;
+}
+
+.main.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main.container-fluid img {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.container {
+  padding: 0px 50px 0px 50px !important;
+}
+
+.content {
+  margin: 30px;
+  height: 300px;
+}
+
+#our_story {
+margin-top: 50px;
+  height: 800px;
+}
+#events {
+margin-top: 50px;
+  height: 800px;
+}
+#rsvp {
+margin-top: 50px;
+  height: 800px;
+}
+#directions {
+margin-top: 50px;
+  height: 800px;
+}
+
+#gallery {
+margin-top: 50px;
+  height: 800px;
+}
+
+#food_menu {
+margin-top: 50px;
+  height: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav--link-left {
+    display: none;
+  }
+
+  .nav--link-right {
+    display: none;
+  }
+
+  .container {
+    padding: 0 20px 0 20px !important;
+  }
+}
