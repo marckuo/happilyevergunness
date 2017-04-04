@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    if (this.hash !== "" && this.hash !== "#carousel-example-generic") {
       // Prevent default anchor click behavior
       event.preventDefault();
 
@@ -19,6 +19,8 @@ $(document).ready(function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
+
+     // End if
   });
 });
