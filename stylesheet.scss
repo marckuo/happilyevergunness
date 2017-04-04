@@ -219,12 +219,19 @@ ul {
   margin: 0 auto;
   width: 100%;
   max-width: 850px;
+  margin-bottom: 50px;
 }
 
 #food_menu {
   margin: 0 auto;
   width: 100%;
   max-width: 850px;
+  margin-bottom: 50px;
+}
+
+#footer {
+  background-color: #C6AB4F;
+  height: 200px;
 }
 
 @media screen and (max-width: 768px) {
