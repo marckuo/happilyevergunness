@@ -147,6 +147,12 @@ a:hover.nav--link  {
   transition-duration: 0.3s;
 }
 
+a:active.nav--link  {
+  text-decoration: none;
+  color: #C6AB4F;
+  transition-duration: 0.3s;
+}
+
 a.nav--link span.glyphicon.glyphicon-heart {
   position: absolute;
   left: -16px;
