@@ -46,7 +46,8 @@ h4 {
 p.text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
+  margin-bottom: 30px !important;
 }
 
 ol.ol-directions {
@@ -144,23 +145,31 @@ a:active.logo-link {
 
 .nav--logo-top {
   color: #C6AB4F;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 25px;
-  width: 200px;
+  width: 220px;
   text-align: center;
   display: block;
 }
 
+.nav--logo-and {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0px 3px 0px 3px;
+}
+
 .nav--logo-bottom {
   color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-size: 15px;
   text-align: center;
   position: relative;
   top: -5px;
-  right: -13px;
+  right: -19px;
 }
 
 a.nav--link {
@@ -209,6 +218,8 @@ a:hover.nav--link span.glyphicon.glyphicon-heart {
 
 .mobile-heart {
   color: #C6AB4F;
+  font-size: 20px;
+  padding-right: 5px;
 }
 
 
