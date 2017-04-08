@@ -17,14 +17,14 @@ h1 {
 h3 {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 300 !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 h4 {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px !important;
-  margin: 0 !important;
+  margin: 0 0 5px 0 !important;
   padding: 0 !important;
   color: #C6AB4F !important;
 }
@@ -83,6 +83,25 @@ li.directions {
   z-index: 99999;
 }
 
+#nav--hamburger {
+  display: none;
+  position: absolute;
+  top: 34;
+  left: 20;
+}
+
+#nav--hamburger-button {
+  border: none;
+  background-color: white;
+  padding: 5px !important;
+}
+
+span.glyphicon.glyphicon-menu-hamburger {
+  color: #C6AB4F;
+  font-size: 20px;
+}
+
+
 .nav--links {
   display: flex;
   width: 1200px;
@@ -109,6 +128,18 @@ li.directions {
   display: inline-block;
   width: 200px;
   position: absolute;
+}
+
+a.logo-link {
+  text-decoration: none !important;
+}
+
+a:hover.logo-link {
+  text-decoration: none !important;
+}
+
+a:active.logo-link {
+  text-decoration: none !important;
 }
 
 .nav--logo-top {
@@ -162,6 +193,49 @@ a.nav--link span.glyphicon.glyphicon-heart {
 
 a:hover.nav--link span.glyphicon.glyphicon-heart {
   visibility: visible;
+}
+
+.nav--mobile {
+  display: none;
+  position: fixed;
+  top: 100;
+  left: 0;
+  z-index: 99999;
+  background-color: white;
+  border-right: 1px solid #d3d3d3;
+  width: 80%;
+  height: 100%;
+}
+
+.mobile-heart {
+  color: #C6AB4F;
+}
+
+
+
+h5.nav--mobile--link-heading {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  margin: 15px 0 5px 0 !important;
+  padding-left: 20px !important;
+  color: #C6AB4F !important;
+}
+
+a.nav--mobile--link {
+  padding-left: 20px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+  transition-duration: 0.3s;
+}
+
+a:hover.nav--mobile--link {
+  color: #C6AB4F;
+  transition-duration: 0.3s;
+  text-decoration: none;
 }
 
 .main.container-fluid {
@@ -231,7 +305,7 @@ ul {
 
 #footer {
   background-color: #C6AB4F;
-  height: 200px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,6 +315,10 @@ ul {
 
   .nav--link-right {
     display: none;
+  }
+
+  #nav--hamburger {
+    display: block;
   }
 
   .container {

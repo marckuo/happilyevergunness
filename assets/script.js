@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -20,7 +20,13 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     }
+  });
 
-     // End if
+  $("#nav--hamburger-button").on('click', function(event) {
+    $('.nav--mobile').slideToggle();
+  });
+
+  $(".nav--mobile--link").on('click', function(event) {
+    $('.nav--mobile').slideToggle();
   });
 });
