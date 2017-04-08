@@ -143,12 +143,17 @@ a:active.logo-link {
   text-decoration: none !important;
 }
 
+.nav--logo-top-container {
+  margin: 0 auto;
+  width: 220px;
+  text-align: center;
+}
+
 .nav--logo-top {
   color: #C6AB4F;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 25px;
-  width: 220px;
   text-align: center;
   display: block;
 }
@@ -169,7 +174,7 @@ a:active.logo-link {
   text-align: center;
   position: relative;
   top: -5px;
-  right: -19px;
+  right: -4px;
 }
 
 a.nav--link {
@@ -320,10 +325,18 @@ ul {
 
 #footer {
   background-color: #C6AB4F;
-  height: 100px;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+p.footer-copyright {
+  margin: 35px auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+}
+
+@media screen and (max-width: 850px) {
   .nav--link-left {
     display: none;
   }
