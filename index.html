@@ -2,8 +2,8 @@
 <head>
   <title>#HappilyEverGunness</title>
   <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/PVPO7YR.png"/>
-  <link rel="stylesheet" type="text/css" href="stylesheet.scss">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheet.scss">
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -204,7 +204,48 @@
 
     <div id="gallery" class="container">
       <h1>Gallery</h1>
-      <h3 style="text-align: center">COMING SOON!</h3>
+      <ul id="gallery-container" class="list-unstyled">
+        <li class="col-xs-6" data-responsive="http://imgur.com/jUx09Xt.jpg" data-src="http://imgur.com/jUx09Xt.jpg">
+          <a href="">
+            <img class="img-responsive img-gallery" src="http://imgur.com/jUx09Xt.jpg" />
+         </a>
+       </li>
+       <li class="col-xs-6" data-responsive="http://imgur.com/MgUv7bA.jpg" data-src="http://imgur.com/MgUv7bA.jpg">
+         <a href="">
+             <img class="img-responsive img-gallery" src="http://imgur.com/MgUv7bA.jpg" />
+          </a>
+        </li>
+        <li class="col-xs-6" data-responsive="http://imgur.com/udnE8GS.jpg" data-src="http://imgur.com/udnE8GS.jpg">
+          <a href="">
+              <img class="img-responsive img-gallery" src="http://imgur.com/udnE8GS.jpg" />
+           </a>
+         </li>
+         <li class="col-xs-6" data-responsive="http://imgur.com/aLPbByo.jpg" data-src="http://imgur.com/aLPbByo.jpg">
+           <a href="">
+               <img class="img-responsive img-gallery" src="http://imgur.com/aLPbByo.jpg" />
+            </a>
+          </li>
+          <li class="col-xs-6" data-responsive="http://imgur.com/mlp0fBP.jpg" data-src="http://imgur.com/mlp0fBP.jpg">
+            <a href="">
+                <img class="img-responsive img-gallery" src="http://imgur.com/mlp0fBP.jpg" />
+             </a>
+           </li>
+           <li class="col-xs-6" data-responsive="http://imgur.com/jCsOAt5.jpg" data-src="http://imgur.com/jCsOAt5.jpg">
+             <a href="">
+                 <img class="img-responsive img-gallery" src="http://imgur.com/jCsOAt5.jpg" />
+              </a>
+            </li>
+            <li class="col-xs-6" data-responsive="http://imgur.com/SGyL7CI.jpg" data-src="http://imgur.com/SGyL7CI.jpg">
+              <a href="">
+                  <img class="img-responsive img-gallery" src="http://imgur.com/SGyL7CI.jpg" />
+               </a>
+             </li>
+            <li class="col-xs-6" data-responsive="http://imgur.com/CEnkbsV.jpg" data-src="http://imgur.com/CEnkbsV.jpg">
+              <a href="">
+                  <img class="img-responsive img-gallery" src="http://imgur.com/CEnkbsV.jpg" />
+               </a>
+             </li>
+      </ul>
     </div>
     <div id="footer" class="container-fluid">
       <p class="footer-copyright">HAPPILYEVERGUNNESS.COM &copy; 2017</p>
@@ -212,6 +253,11 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./assets/lightgallery.min.js"></script>
+  <script src="./assets/lg-thumbnail.min.js"></script>
+  <script type="text/javascript">
+    lightGallery(document.getElementById('gallery-container'));
+  </script>
   <script src="./assets/script.js"></script>
 </body>
 </html>
