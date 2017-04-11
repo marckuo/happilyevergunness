@@ -316,15 +316,20 @@ ul {
   margin-bottom: 50px;
 }
 
-.image-gallery {
-  width: 100px;
-  height: 100px;
+li.gallery-image-container {
+  overflow: hidden;
 }
 
-.img-gallery {
+img.img-gallery {
   margin: 15 auto !important;
   width: 100% !important;
   object-fit: scale-down !important;
+  transition: all 1s ease;
+}
+
+img:hover.img-gallery {
+   transform: scale(1.1);
+   width: 105% !important;
 }
 
 .lg-backdrop.in {
